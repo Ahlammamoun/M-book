@@ -1,0 +1,5 @@
+
+
+
+#we bloc the access of  app 
+Deny from all
