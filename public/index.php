@@ -1,6 +1,6 @@
 <?php
 
-
+require __DIR__ . '/../vendor/autoload.php';
 
 
 require __DIR__ . '/../app/Controllers/MainController.php';
@@ -28,7 +28,7 @@ $routes = [
 ];
 
 
-
+//dump($routes);
 
 //var_dump($routes);
 if (isset($routes[$pageToDisplay])) {
@@ -53,7 +53,6 @@ if (isset($routes[$pageToDisplay])) {
 
     //on appel la méthod du bon controller
     $controller->$methodToCall();
-
 } else {
     //page 404 si la ressource n'est pas trouvée
     $controller = new MainController();
