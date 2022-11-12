@@ -26,7 +26,9 @@ class MainController
 
     //Méthode show qui gère l'inclusion des templates et génère le html de la page
     private function show($viewName, $viewData = [])
+
     {
+        
         require_once __DIR__ . '/../views/header.tpl.php';
         require_once __DIR__ . '/../views/' . $viewName . '.tpl.php';
         require_once __DIR__ . '/../views/footer.tpl.php';

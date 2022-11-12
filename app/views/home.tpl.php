@@ -6,7 +6,7 @@
               alt="Card image" class="card-img">
             <div class="card-img-overlay d-flex align-items-center">
               <div class="w-100 py-3">
-                <h2 class="display-3 font-weight-bold mb-4">Tendance</h2><a href="category.html" class="btn btn-light">Top des ventes</a>
+                <h2 class="display-3 font-weight-bold mb-4">Romance</h2><a href="category.html" class="btn btn-light">Top des ventes</a>
               </div>
             </div>
           </div>
@@ -16,7 +16,7 @@
               alt="Card image" class="card-img">
             <div class="card-img-overlay d-flex align-items-center">
               <div class="w-100 py-3">
-                <h2 class="display-3 font-weight-bold mb-4">A l'ancienne</h2><a href="category.html" class="btn btn-light">Fun</a>
+                <h2 class="display-3 font-weight-bold mb-4">Fiction</h2><a href="category.html" class="btn btn-light">Fun</a>
               </div>
             </div>
           </div>
@@ -29,7 +29,7 @@
               alt="Card image" class="card-img">
             <div class="card-img-overlay d-flex align-items-center">
               <div class="w-100">
-                <h2 class="display-4 mb-4">Voyager</h2><a href="category.html" class="btn btn-link text-white">Faire un tour
+                <h2 class="display-4 mb-4">Mangas</h2><a href="category.html" class="btn btn-link text-white">Asie
                   <i class="fa-arrow-right fa ml-2"></i></a>
               </div>
             </div>
@@ -41,8 +41,8 @@
                 alt="Card image" class="card-img">
               <div class="card-img-overlay d-flex align-items-center">
                 <div class="w-100">
-                  <h2 class="display-4 mb-4">Détente</h2>
-                  <a href="category.html" class="btn btn-link text-dark">Se faire plaisir
+                  <h2 class="display-4 mb-4">Histoire</h2>
+                  <a href="category.html" class="btn btn-link text-dark">Culture
                     <i class="fa-arrow-right fa ml-2"></i>
                   </a>
                 </div>
@@ -54,7 +54,7 @@
               alt="Card image" class="card-img">
             <div class="card-img-overlay d-flex align-items-center">
               <div class="w-100">
-                <h2 class="display-4 mb-4">Intellectuel</h2><a href="category.html" class="btn btn-link text-white">Bien choisir <i class="fa-arrow-right fa ml-2"></i></a>
+                <h2 class="display-4 mb-4">Sciences</h2><a href="category.html" class="btn btn-link text-white">la recherche<i class="fa-arrow-right fa ml-2"></i></a>
               </div>
             </div>
           </div>

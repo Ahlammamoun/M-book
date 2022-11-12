@@ -11,7 +11,7 @@ a:hover {
   
 .top-bar {
   color: #495057;
-  background: #f8f9fa;
+  background:#FFD700;
   padding: 1rem;
   font-weight: 300;
 }
@@ -63,7 +63,14 @@ a:hover {
   font-weight: bold;
   
 }
-  
+.navbar {
+  background-color: black;
+  color: #dee2e6;
+}
+
+.container-fluid {
+  background-color: gold;
+}
 /* misc */
 .dropdown-menu {
   box-shadow: 2px 2px 2px rgba(0,0,0,0.1),-1px -1px 2px rgba(0,0,0,0.1);
@@ -79,11 +86,17 @@ a:hover {
 h2{
   color: whitesmoke;
 }
+p{
+  color: gold;
+}
 .text-sm {
   font-size: 0.78rem
 }
 .input-items {
   min-width: 40px;
+}
+.row.mx-0 {
+  background-color: black;
 }
 /* produits */
 .products-grid {
@@ -153,13 +166,14 @@ img {
 }
 /* Footer */
 #footer-services {
-  background-color: #f8f9fa;
+  background-color: black;
+  color: gold;
 }
 #footer-menu {
-  background-color: #dee2e6;
+  background-color: 	#FFD700;
 }
 #footer-copyright {
-  background-color: #343a40;
+  background-color:black;
   color: #dee2e6;
 }
 .payment-icon {
