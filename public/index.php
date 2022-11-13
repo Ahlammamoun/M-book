@@ -65,8 +65,6 @@ $router->map(
 
 );
 
-<<<<<<< HEAD
-
 
 $router->map(
     'GET', //method http autorisé pour cette route
@@ -93,8 +91,6 @@ $router->map(
 );
 
 
-=======
->>>>>>> cdda9dad3a592cb056fecdf49cbd6dd1e9e002b9
 //on check s'il une route correspondante existe à la route demandé
 $match = $router->match();
 
