@@ -1,0 +1,12 @@
+; Une fichier .ini permet de représenter un ensemble d'associations clé/valeur
+; comme le fait un tableau associatif en PHP.
+; Une ligne qui commence par ; dans un fichier .ini est une ligne de commentaire
+; Le fichier config.ini.dist est un fichier de configuration d'exemple
+; pour la connexion à la base de données
+; Il faut créer une copie de ce fichier et la nommer config.ini pour
+; que le fichier Database.php puisse trouver les informations de connexions
+
+DB_HOST     = 
+DB_USERNAME = 
+DB_PASSWORD = 
+DB_NAME     = 

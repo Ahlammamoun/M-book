@@ -5,7 +5,8 @@ require __DIR__ . '/../vendor/autoload.php';
 
 require __DIR__ . '/../app/Controllers/MainController.php';
 require __DIR__ . '/../app/Controllers/CatalogController.php';
-
+require __DIR__ . '/../app/Models/Language.php';
+require __DIR__ . '/../app/Utils/Database.php';
 
 $router = new AltoRouter();
 
@@ -36,6 +37,17 @@ $router->map(
         'method' => 'categoryAction',
     ],
     'categorie', //identifiant unique pour cette route
+);
+
+$router->map(
+
+    'GET', //method http autorisé pour cette route
+    '/test/', //la partie url aprés la racine
+    [
+        'controller' => 'MainController',
+        'method' => 'testAction',
+    ],
+    'test', //identifiant unique pour cette route
 );
 
 

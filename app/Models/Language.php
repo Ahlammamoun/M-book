@@ -1,5 +1,6 @@
 <?php
 
+use mbook\Utils\Database;
 
 class language
 {
@@ -40,5 +41,25 @@ class language
     public function setUpdated_at($updated_at)
     {
         $this->updated_at = $updated_at;
+    }
+
+    public function findAll()
+    {
+        //connexion a la bdd 
+        $pdoDBConnexion = Database::getPDO();
+
+        //ecriture de la requête
+        $sql = 'SELECT * FROM `language`';
+
+        //execution de la requête
+        $pdoStatement = $pdoDBConnexion->query($sql);
+    
+        //dump($pdoDBConnexion);
+
+
+        //on récupère les datas
+        $languageList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Language');
+
+       return $languageList;
     }
 }
