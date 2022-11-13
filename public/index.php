@@ -30,7 +30,7 @@ $router->map(
 
 );
 
-    $router->map(
+$router->map(
     'GET', //method http autorisé pour cette route
     '/catalogue/categorie/[i:id]', //la partie url aprés la racine
     [
@@ -53,11 +53,42 @@ $router->map(
 );
 
 
+$router->map(
+    'GET', //method http autorisé pour cette route
+    '/catalogue/etat/[i:id]', //la partie url aprés la racine
+    [
+        'controller' => 'CatalogController', // on choisi le nom du controller et de la methode , chpisi en amont
+        'method' => 'etatAction',
+    ],
+    'etat', //identifiant unique pour cette route
+
+);
 
 
 
+$router->map(
+    'GET', //method http autorisé pour cette route
+    '/catalogue/language/[i:id]', //la partie url aprés la racine
+    [
+        'controller' => 'CatalogController', // on choisi le nom du controller et de la methode , chpisi en amont
+        'method' => 'languageAction',
+    ],
+    'language', //identifiant unique pour cette route
 
+);
 
+///catalogue/produit/[id]
+
+$router->map(
+    'GET', //method http autorisé pour cette route
+    '/catalogue/produit/[i:id]', //la partie url aprés la racine
+    [
+        'controller' => 'CatalogController', // on choisi le nom du controller et de la methode , chpisi en amont
+        'method' => 'productAction',
+    ],
+    'produit', //identifiant unique pour cette route
+
+);
 
 
 //on check s'il une route correspondante existe à la route demandé
