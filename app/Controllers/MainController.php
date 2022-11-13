@@ -21,6 +21,13 @@ class MainController
         $this->show('home');
     }
 
+    public function legalMentionsAction()
+    {
+
+
+        // Délègue l'affichage à la méthode "show" du MainController
+        $this->show('legal-mentions');
+    }
 
 
 
@@ -28,7 +35,7 @@ class MainController
     private function show($viewName, $viewData = [])
 
     {
-        
+        $absoluteURL = $_SERVER['BASE_URI'];
         require_once __DIR__ . '/../views/header.tpl.php';
         require_once __DIR__ . '/../views/' . $viewName . '.tpl.php';
         require_once __DIR__ . '/../views/footer.tpl.php';

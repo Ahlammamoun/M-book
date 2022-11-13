@@ -110,7 +110,7 @@
           <p class="mb-md-0">Tous droits réservés<br>© 2023 M-book</p>
         </div>
         <div class="col-md-6 text-center">
-          <p class="mb-md-0"><a class="text-white" href="#">Mentions légales</a><br><a class="text-white" href="#">Conditions générales de vente</a></p>
+          <p class="mb-md-0"><a class="text-white" href="mentions-legales/">Mentions légales</a><br><a class="text-white" href="#">Conditions générales de vente</a></p>
         </div>
 
         <div class="col-md-3">
@@ -132,10 +132,10 @@
 </footer>
 
 <!-- JS -->
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/app.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/app.js"></script>
 </body>
 
 </html>

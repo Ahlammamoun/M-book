@@ -16,6 +16,8 @@ $router = new AltoRouter();
 $router->setBasePath($_SERVER['BASE_URI']);
 
 
+
+
 $router->map(
 
     'GET', //method http autorisé pour cette route
@@ -25,10 +27,10 @@ $router->map(
         'method' => 'homeAction',
     ],
     'main-home', //identifiant unique pour cette route
+
 );
 
-$router->map(
-
+    $router->map(
     'GET', //method http autorisé pour cette route
     '/catalogue/categorie/[i:id]', //la partie url aprés la racine
     [
@@ -36,7 +38,26 @@ $router->map(
         'method' => 'categoryAction',
     ],
     'categorie', //identifiant unique pour cette route
+
 );
+
+$router->map(
+    'GET', //method http autorisé pour cette route
+    '/mentions-legales/', //la partie url aprés la racine
+    [
+        'controller' => 'MainController',
+        'method' => 'legalMentionsAction',
+    ],
+    'legal-mentions', //identifiant unique pour cette route
+
+);
+
+
+
+
+
+
+
 
 
 //on check s'il une route correspondante existe à la route demandé
@@ -72,8 +93,6 @@ if ($match !== false) {
 
     //on appel la méthod du bon controller
     $controller->$methodToCall($urlParams);
-
-    
 } else {
     //page 404 si la ressource n'est pas trouvée
     $controller = new MainController();
