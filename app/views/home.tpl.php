@@ -42,7 +42,7 @@
               <div class="card-img-overlay d-flex align-items-center">
                 <div class="w-100">
                   <h2 class="display-4 mb-4">Histoire</h2>
-                  <a href="category.html" class="btn btn-link text-dark">Culture
+                  <a href = "category.html" class = "btn btn-link text-dark">Culture
                     <i class="fa-arrow-right fa ml-2"></i>
                   </a>
                 </div>
