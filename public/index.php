@@ -41,6 +41,7 @@ $router->map(
 
 );
 
+
 $router->map(
     'GET', //method http autorisé pour cette route
     '/mentions-legales/', //la partie url aprés la racine
@@ -51,11 +52,6 @@ $router->map(
     'legal-mentions', //identifiant unique pour cette route
 
 );
-
-
-
-
-
 
 
 
