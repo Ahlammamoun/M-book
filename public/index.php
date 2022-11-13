@@ -41,6 +41,7 @@ $router->map(
 
 );
 
+
 $router->map(
     'GET', //method http autorisé pour cette route
     '/mentions-legales/', //la partie url aprés la racine
@@ -64,6 +65,7 @@ $router->map(
 
 );
 
+<<<<<<< HEAD
 
 
 $router->map(
@@ -91,6 +93,8 @@ $router->map(
 );
 
 
+=======
+>>>>>>> cdda9dad3a592cb056fecdf49cbd6dd1e9e002b9
 //on check s'il une route correspondante existe à la route demandé
 $match = $router->match();
 
