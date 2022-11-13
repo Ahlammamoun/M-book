@@ -35,8 +35,14 @@ $router->map(
         'controller' => 'CatalogController',
         'method' => 'categoryAction',
     ],
-    'categorie', //identifiant unique pour cette route
+    'category', //identifiant unique pour cette route
 );
+
+
+
+
+
+
 
 
 //on check s'il une route correspondante existe à la route demandé
@@ -72,8 +78,6 @@ if ($match !== false) {
 
     //on appel la méthod du bon controller
     $controller->$methodToCall($urlParams);
-
-    
 } else {
     //page 404 si la ressource n'est pas trouvée
     $controller = new MainController();
