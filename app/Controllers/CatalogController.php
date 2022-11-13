@@ -15,6 +15,8 @@ class CatalogController
         //dump($viewName);
         dump($viewData);
 
+        $absoluteURL = $_SERVER['BASE_URI'];
+        
         require_once __DIR__ . '/../views/header.tpl.php';
         require_once __DIR__ . '/../views/' . $viewName . '.tpl.php';
         require_once __DIR__ . '/../views/footer.tpl.php';

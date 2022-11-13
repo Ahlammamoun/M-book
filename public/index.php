@@ -16,6 +16,8 @@ $router = new AltoRouter();
 $router->setBasePath($_SERVER['BASE_URI']);
 
 
+
+
 $router->map(
 
     'GET', //method http autorisé pour cette route
@@ -25,22 +27,31 @@ $router->map(
         'method' => 'homeAction',
     ],
     'main-home', //identifiant unique pour cette route
+
 );
 
-$router->map(
-
+    $router->map(
     'GET', //method http autorisé pour cette route
     '/catalogue/categorie/[i:id]', //la partie url aprés la racine
     [
         'controller' => 'CatalogController',
         'method' => 'categoryAction',
     ],
-    'category', //identifiant unique pour cette route
+    'categorie', //identifiant unique pour cette route
+
 );
 
 
+$router->map(
+    'GET', //method http autorisé pour cette route
+    '/mentions-legales/', //la partie url aprés la racine
+    [
+        'controller' => 'MainController',
+        'method' => 'legalMentionsAction',
+    ],
+    'legal-mentions', //identifiant unique pour cette route
 
-
+);
 
 
 
