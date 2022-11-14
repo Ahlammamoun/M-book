@@ -24,8 +24,17 @@ class MainController
 
     public function testAction()
     {
+
+        //j'instancie langauge je récupère un objet
+       // $languageObject = new Language();
+        //$languageObject->findAll();
+
+
         $languageObject = new Language();
-        dump($languageObject->findAll());
+$language3 = $languageObject->find(3);
+
+
+        dump($language3->getName());
     }
 
     public function legalMentionsAction()
@@ -42,8 +51,6 @@ class MainController
     private function show($viewName, $viewData = [])
 
     {
-
-
 
         $absoluteURL = $_SERVER['BASE_URI'];
 
