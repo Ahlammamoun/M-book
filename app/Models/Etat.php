@@ -2,45 +2,93 @@
 
 use mbook\Utils\Database;
 
-class language
+class Etat
 {
     private $id;
     private $name;
     private $footer_order;
     private $created_at;
-    private $updated_at;
+    private $update_at;
 
+
+
+
+
+
+    /**
+     * Get the value of id
+     */
     public function getId()
     {
         return $this->id;
     }
+
+    /**
+     * Get the value of name
+     */
     public function getName()
     {
         return $this->name;
     }
+
+    /**
+     * Set the value of name
+     *
+     * @return  self
+     */
     public function setName($name)
     {
         $this->name = $name;
+
+        return $this;
     }
+
+    /**
+     * Get the value of footer_order
+     */
     public function getFooter_order()
     {
         return $this->footer_order;
     }
+
+    /**
+     * Set the value of footer_order
+     *
+     * @return  self
+     */
     public function setFooter_order($footer_order)
     {
         $this->footer_order = $footer_order;
+
+        return $this;
     }
+
+    /**
+     * Get the value of created_at
+     */
     public function getCreated_at()
     {
         return $this->created_at;
     }
-    public function getUpdated_at()
+
+    /**
+     * Get the value of update_at
+     */
+    public function getUpdate_at()
     {
-        return $this->updated_at;
+        return $this->update_at;
     }
-    public function setUpdated_at($updated_at)
+
+    /**
+     * Set the value of update_at
+     *
+     * @return  self
+     */
+    public function setUpdate_at($update_at)
     {
-        $this->updated_at = $updated_at;
+        $this->update_at = $update_at;
+
+        return $this;
     }
 
     public function findAll()
@@ -49,7 +97,7 @@ class language
         $pdoDBConnexion = Database::getPDO();
 
         //ecriture de la requête
-        $sql = 'SELECT * FROM `language`';
+        $sql = 'SELECT * FROM `etat`';
 
         //execution de la requête
         $pdoStatement = $pdoDBConnexion->query($sql);
@@ -58,20 +106,21 @@ class language
 
 
         //on récupère les datas
-        $languageList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Language');
+        $etatList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Etat');
 
-        return $languageList;
+        return $etatList;
     }
+
     public function find($id)
     {
         $pdoDBConnexion = Database::getPDO();
 
-        $sql = 'SELECT * FROM `language` WHERE `id` = ' . $id;
+        $sql = 'SELECT * FROM `etat` WHERE `id` = ' . $id;
 
         $pdoStatement = $pdoDBConnexion->query($sql);
 
-        $language = $pdoStatement->fetchObject('Language');
+        $etat  = $pdoStatement->fetchObject('Etat');
 
-        return $language;
+        return $etat;
     }
 }
