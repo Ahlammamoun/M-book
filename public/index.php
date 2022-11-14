@@ -6,6 +6,9 @@ require __DIR__ . '/../vendor/autoload.php';
 require __DIR__ . '/../app/Controllers/MainController.php';
 require __DIR__ . '/../app/Controllers/CatalogController.php';
 require __DIR__ . '/../app/Models/Language.php';
+require __DIR__ . '/../app/Models/Category.php';
+require __DIR__ . '/../app/Models/Etat.php';
+require __DIR__ . '/../app/Models/Product.php';
 require __DIR__ . '/../app/Utils/Database.php';
 
 $router = new AltoRouter();

@@ -21,11 +21,12 @@ class MainController
         $this->show('home');
     }
 
-
     public function testAction()
     {
-        $languageObject = new Language();
-        dump($languageObject->findAll());
+        //$languageObject = new Language();
+        //dump($languageObject->findAll());
+       // $etatObject = new Etat;
+        //dump($etatObject->findAll());
     }
 
     public function legalMentionsAction()
@@ -36,15 +37,10 @@ class MainController
         $this->show('legal-mentions');
     }
 
-
-
     //Méthode show qui gère l'inclusion des templates et génère le html de la page
     private function show($viewName, $viewData = [])
 
     {
-
-
-
         $absoluteURL = $_SERVER['BASE_URI'];
 
         require_once __DIR__ . '/../views/header.tpl.php';
