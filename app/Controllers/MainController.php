@@ -23,13 +23,16 @@ class MainController
 
     public function testAction()
     {
-       //$categoryObject = new Category();
-       //$category2 =  $categoryObject->find(2);
-       //dump($category2);
-       //$category2->setUpdated_at('06.03.1982');
-       //dump($category2);
-
-
+        //$categoryObject = new Category();
+        //$category2 =  $categoryObject->find(2);
+        //dump($category2);
+        //$category2->setUpdated_at('06.03.1982');
+        //dump($category2);
+        $productObject = new Product();
+        $product4 = $productObject->find(4);
+        dump($product4);
+        $product4->setName('du ahlam');
+        dump($product4);
         //$categorObject = new Category();
         //dump($categorObject->findAll());
     }
