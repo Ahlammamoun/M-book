@@ -1,49 +1,21 @@
 <?php
 use mbook\Utils\Database;
-class Product
+
+
+class Product extends CoreModel
 {
 
-    private $id;
-    private $name;
+   
     private $description;
     private $picture;
     private $price;
     private $rate;
     private $status;
-    private $created_at;
-    private $updated_at;
     private $language_id;
     private $category_id;
     private $etat_id;
 
-    /**
-     * Get the value of id
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Get the value of name
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set the value of name
-     *
-     * @return  self
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
-
+   
     /**
      * Get the value of description
      */

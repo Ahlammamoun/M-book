@@ -23,13 +23,19 @@ class MainController
 
     public function testAction()
     {
+       //$categoryObject = new Category();
+       //$category2 =  $categoryObject->find(2);
+       //dump($category2);
+       //$category2->setUpdated_at('06.03.1982');
+       //dump($category2);
 
-    
+
+        //$categorObject = new Category();
+        //dump($categorObject->findAll());
     }
 
     public function legalMentionsAction()
     {
-
 
         // Délègue l'affichage à la méthode "show" du MainController
         $this->show('legal-mentions');

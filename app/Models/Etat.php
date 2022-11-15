@@ -2,42 +2,12 @@
 
 use mbook\Utils\Database;
 
-class Etat
+class Etat extends CoreModel
 {
-    private $id;
-    private $name;
+ 
     private $footer_order;
-    private $created_at;
-    private $update_at;
+  
 
-
-    /**
-     * Get the value of id
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * Get the value of name
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set the value of name
-     *
-     * @return  self
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
-
-        return $this;
-    }
 
     /**
      * Get the value of footer_order
@@ -59,33 +29,6 @@ class Etat
         return $this;
     }
 
-    /**
-     * Get the value of created_at
-     */
-    public function getCreated_at()
-    {
-        return $this->created_at;
-    }
-
-    /**
-     * Get the value of update_at
-     */
-    public function getUpdate_at()
-    {
-        return $this->update_at;
-    }
-
-    /**
-     * Set the value of update_at
-     *
-     * @return  self
-     */
-    public function setUpdate_at($update_at)
-    {
-        $this->update_at = $update_at;
-
-        return $this;
-    }
 
     public function findAll()
     {
