@@ -62,4 +62,34 @@ class Etat extends CoreModel
 
         return $etat;
     }
+
+    public function findFooterEtats()
+    {
+        //connexion a la bdd 
+        $pdoDBConnexion = Database::getPDO();
+
+        //ecriture de la requête
+        $sql = 'SELECT *
+                FROM `etat`
+                WHERE `footer_order` > 0
+                ORDER BY `footer_order` 
+                LIMIT 5';
+
+        //execution de la requête
+        $pdoStatement = $pdoDBConnexion->query($sql);
+
+        //dump($pdoDBConnexion);
+
+
+        //on récupère les datas
+        $etatsList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'etat');
+        //dump($languageList);
+        return $etatsList;
+    }
+
+    
+
+
+
+
 }
