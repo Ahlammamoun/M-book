@@ -80,10 +80,15 @@
         <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <h6 class="text-uppercase text-dark mb-3">Etats</h6>
           <ul class="list-unstyled">
-          <li> <a href="#" class="text-muted">bon etat</a></li>
+          <?php foreach ($footerEtats as $singleEtat): ?>
+                <li>
+                  <a href="<?= $router->generate('etat', ['id' => $singleEtat->getId()]) ?>" class="text-muted"><?= $singleEtat->getName() ?></a>
+                </li>
+              <?php endforeach; ?>
+       <!--   <li> <a href="#" class="text-muted">bon etat</a></li>
             <li> <a href="#" class="text-muted">good</a></li>
             <li> <a href="#" class="text-muted">parfait etat</a></li>
-            <li> <a href="#" class="text-muted">occaz</a></li>
+            <li> <a href="#" class="text-muted">occaz</a></li> !-->
           </ul>
         </div>
         <div class="col-lg-4">

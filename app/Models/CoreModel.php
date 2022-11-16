@@ -54,4 +54,23 @@ class CoreModel
 
         return $this;
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 }
