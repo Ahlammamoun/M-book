@@ -70,21 +70,20 @@
         <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
           <h6 class="text-uppercase text-dark mb-3">Langues</h6>
           <ul class="list-unstyled">
-            <li> <a href="#" class="text-muted">Français</a></li>
-            <li> <a href="#" class="text-muted">Anglais</a></li>
-            <li> <a href="#" class="text-muted">Allemand</a></li>
-            <li> <a href="#" class="text-muted">Espagnol</a></li>
-            <li> <a href="#" class="text-muted">Arabe</a></li>
-            <li> <a href="#" class="text-muted">Mandarin</a></li>
+          <?php foreach ($footerLanguages as $singleLanguage): ?>
+                <li>
+                  <a href="<?= $router->generate('language', ['id' => $singleLanguage->getId()]) ?>" class="text-muted"><?= $singleLanguage->getName() ?></a>
+                </li>
+              <?php endforeach; ?>
           </ul>
         </div>
         <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
-          <h6 class="text-uppercase text-dark mb-3">Etat</h6>
+          <h6 class="text-uppercase text-dark mb-3">Etats</h6>
           <ul class="list-unstyled">
-            <li> <a href="#" class="text-muted">Neuf</a></li>
-            <li> <a href="#" class="text-muted">Très bon état</a></li>
-            <li> <a href="#" class="text-muted">Bon état</a></li>
-            <li> <a href="#" class="text-muted">Correct</a></li>
+          <li> <a href="#" class="text-muted">bon etat</a></li>
+            <li> <a href="#" class="text-muted">good</a></li>
+            <li> <a href="#" class="text-muted">parfait etat</a></li>
+            <li> <a href="#" class="text-muted">occaz</a></li>
           </ul>
         </div>
         <div class="col-lg-4">
@@ -110,7 +109,7 @@
           <p class="mb-md-0">Tous droits réservés<br>© 2023 M-book</p>
         </div>
         <div class="col-md-6 text-center">
-          <p class="mb-md-0"><a class="text-white" href="mentions-legales/">Mentions légales</a><br><a class="text-white" href="#">Conditions générales de vente</a></p>
+          <p class="mb-md-0"><a class="text-white" href="<?= $router->generate('legal-mentions')?>">Mentions légales</a><br><a class="text-white" href="#">Conditions générales de vente</a></p>
         </div>
 
         <div class="col-md-3">

@@ -1,7 +1,8 @@
 <?php
 
 
-class MainController
+
+class MainController extends CoreController
 {
     // Méthode chargée de gérer la page 404
     public function pageNotFound()
@@ -15,10 +16,10 @@ class MainController
     // Méthode chargée de gérer la page d'accueil
     public function homeAction()
     {
-
-
         // Délègue l'affichage à la méthode "show" du MainController
         $this->show('home');
+
+
     }
 
     public function testAction()
@@ -28,13 +29,14 @@ class MainController
         //dump($category2);
         //$category2->setUpdated_at('06.03.1982');
         //dump($category2);
-        $productObject = new Product();
-        $product4 = $productObject->find(4);
-        dump($product4);
-        $product4->setName('du ahlam');
-        dump($product4);
-        //$categorObject = new Category();
-        //dump($categorObject->findAll());
+        //$productObject = new Product();
+        //$product4 = $productObject->find(4);
+        //dump($product4);
+        //$product4->setName('du ahlam');
+        //dump($product4);
+        //$categoryObject = new Category();
+        //dump($categoryObject->findAll());
+       
     }
 
     public function legalMentionsAction()
@@ -44,14 +46,8 @@ class MainController
         $this->show('legal-mentions');
     }
 
-    //Méthode show qui gère l'inclusion des templates et génère le html de la page
-    private function show($viewName, $viewData = [])
+   
+   
 
-    {
-        $absoluteURL = $_SERVER['BASE_URI'];
-
-        require_once __DIR__ . '/../views/header.tpl.php';
-        require_once __DIR__ . '/../views/' . $viewName . '.tpl.php';
-        require_once __DIR__ . '/../views/footer.tpl.php';
-    }
+       
 }

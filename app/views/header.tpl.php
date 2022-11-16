@@ -42,22 +42,22 @@
     <nav class="navbar navbar-expand-lg navbar-sticky navbar-airy navbar-light">
       <div class="container-fluid">
         <!-- Navbar Header  -->
-        <a href="./" class="navbar-brand">M-Book</a>
+        <a href="<?= $router->generate('main-home') ?>" class="navbar-brand">M-Book</a>
         <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
         <!-- Navbar Collapse -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a href="./" class="nav-link active">Home</a>
+              <a href="<?= $router->generate('main-home') ?>" class="nav-link active">Acceuil</a>
             </li>
             <li class="nav-item">
               <a href="cat" class="nav-link">Catégories</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Langue</a>
+              <a href="#" class="nav-link">Langues</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Etat</a>
+              <a href="#" class="nav-link">Etats</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Blog</a>
