@@ -5,9 +5,9 @@ use mbook\Utils\Database;
 
 class language extends CoreModel
 {
-    
+
     private $footer_order;
- 
+
 
     public function getFooter_order()
     {
@@ -17,7 +17,7 @@ class language extends CoreModel
     {
         $this->footer_order = $footer_order;
     }
- 
+
 
     public function findAll()
     {
@@ -54,5 +54,29 @@ class language extends CoreModel
 
         // On retourne le résultat
         return $language;
+    }
+
+    public function findFooterLanguages()
+    {
+        //connexion a la bdd 
+        $pdoDBConnexion = Database::getPDO();
+
+        //ecriture de la requête
+        $sql = 'SELECT *
+                FROM `language`
+                WHERE `footer_order` > 0
+                ORDER BY `footer_order` 
+                LIMIT 5';
+
+        //execution de la requête
+        $pdoStatement = $pdoDBConnexion->query($sql);
+
+        //dump($pdoDBConnexion);
+
+
+        //on récupère les datas
+        $languageList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'language');
+        //dump($languageList);
+        return $languageList;
     }
 }
