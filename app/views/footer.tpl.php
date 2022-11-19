@@ -85,10 +85,6 @@
                   <a href="<?= $router->generate('etat', ['id' => $singleEtat->getId()]) ?>" class="text-muted"><?= $singleEtat->getName() ?></a>
                 </li>
               <?php endforeach; ?>
-       <!--   <li> <a href="#" class="text-muted">bon etat</a></li>
-            <li> <a href="#" class="text-muted">good</a></li>
-            <li> <a href="#" class="text-muted">parfait etat</a></li>
-            <li> <a href="#" class="text-muted">occaz</a></li> !-->
           </ul>
         </div>
         <div class="col-lg-4">

@@ -1,12 +1,16 @@
 <?php
 
-namespace mbook\Utils;
-
+namespace Mbook\Utils;
 use PDO;
+
+
 
 // Retenir son utilisation  => Database::getPDO()
 // Design Pattern : Singleton
 class Database
+
+
+
 {
     /** @var PDO */
     private $dbh;

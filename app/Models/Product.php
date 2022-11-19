@@ -1,11 +1,14 @@
 <?php
-use mbook\Utils\Database;
 
+namespace Mbook\Models;
+
+use Mbook\Utils\Database;
+use PDO;
 
 class Product extends CoreModel
 {
 
-   
+
     private $description;
     private $picture;
     private $price;
@@ -15,7 +18,7 @@ class Product extends CoreModel
     private $category_id;
     private $etat_id;
 
-   
+
     /**
      * Get the value of description
      */
@@ -235,22 +238,55 @@ class Product extends CoreModel
 
         $pdoStatement   = $pdoDBConnexion->query($sql);
 
-        $product        = $pdoStatement->fetchObject('Product');
+        $product     = $pdoStatement->fetchObject('Product');
 
         return $product;
     }
 
 
 
+    public function findProductWithCategoryAndLanguageNAme($id)
+    {
+        $pdoDBConnexion = Database::getPDO();
+
+        $sql =      'SELECT `product`.*, `language`.`name` AS `language_name`, `category`.`name` AS `category_name`
+                    FROM   `product`
+                    INNER JOIN `language` ON `product`.`language_id` = `language`.`id`
+                    INNER JOIN `category` ON `product` .`category_id` = `category`.`id`
+                    WHERE  `product`.`id` = ' . $id;
+
+        $pdoStatement = $pdoDBConnexion->query($sql);
+
+
+        //pusique c'est un requête jointe
+        //Fetch_assoc retourne un tableau associatif avec les mêmes key que les propriétées du model, fetch object nous retourne un objet avec des key rajouté à la volé par php qui font que le tableau d'objet ne correspond plus au model et ses propriétés
+        //il faut que les objets respect leurs plan de fabrication (fabriqué dan le model)
+        $product = $pdoStatement->fetch(pdo::FETCH_ASSOC);
+
+
+        return $product;
+    }
 
 
 
+    public function findProductsWithNameAndEtatByCategoryID($id)
+    {
+        $pdoDBConnexion = Database::getPDO();
+
+        $sql = 'SELECT `product`.*,`etat`.`name` AS `etat_name`
+                FROM `product`
+                INNER JOIN `etat` ON `product`.`etat_id` = `etat`.`id`
+                WHERE `category_id` = ' . $id;
+
+        $pdoStatement = $pdoDBConnexion->query($sql);
 
 
+        //pusique c'est un requête jointe
+        //Fetch_assoc retourne un tableau associatif avec les mêmes key que les propriétées du model, fetch object nous retourne un objet avec des key rajouté à la volé par php qui font que le tableau d'objet ne correspond plus au model et ses propriétés
+        //il faut que les objets respect leurs plan de fabrication (fabriqué dan le model)
+        $productListWithNameAndEtatByCategoryId = $pdoStatement->fetchAll(pdo::FETCH_ASSOC);
 
 
-
-
-
-
+        return $productListWithNameAndEtatByCategoryId;
+    }
 }

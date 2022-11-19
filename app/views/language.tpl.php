@@ -6,6 +6,7 @@
         <li class="breadcrumb-item active">Nom de l'etat</li>
       </ol>
       <!-- Hero Content-->
+     
       <div class="hero-content pb-5 text-center">
         <h1 class="hero-heading">Langue n°<?= $viewData['language_id'] ?>
         <div class="row">

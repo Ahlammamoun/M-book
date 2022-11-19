@@ -1,6 +1,9 @@
 <?php
 
-use mbook\Utils\Database;
+namespace Mbook\Models;
+
+use Mbook\Utils\Database;
+use PDO;
 
 
 class language extends CoreModel
@@ -75,7 +78,7 @@ class language extends CoreModel
 
 
         //on récupère les datas
-        $languageList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'language');
+        $languageList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, '\\Mbook\\Models\\Language');
         //dump($languageList);
         return $languageList;
     }

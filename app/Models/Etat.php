@@ -1,6 +1,9 @@
 <?php
 
-use mbook\Utils\Database;
+namespace Mbook\Models;
+
+use Mbook\Utils\Database;
+use PDO;
 
 class Etat extends CoreModel
 {
@@ -82,7 +85,7 @@ class Etat extends CoreModel
 
 
         //on récupère les datas
-        $etatsList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'etat');
+        $etatsList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, '\\Mbook\\Models\\etat');
         //dump($languageList);
         return $etatsList;
     }

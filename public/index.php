@@ -2,7 +2,11 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-require __DIR__ . '/../app/Controllers/CoreController.php';
+
+
+
+
+/*require __DIR__ . '/../app/Controllers/CoreController.php';
 require __DIR__ . '/../app/Controllers/MainController.php';
 require __DIR__ . '/../app/Controllers/CatalogController.php';
 require __DIR__ . '/../app/Models/CoreModel.php';
@@ -10,8 +14,7 @@ require __DIR__ . '/../app/Models/Language.php';
 require __DIR__ . '/../app/Models/Category.php';
 require __DIR__ . '/../app/Models/Etat.php';
 require __DIR__ . '/../app/Models/Product.php';
-require __DIR__ . '/../app/Utils/Database.php';
-
+require __DIR__ . '/../app/Utils/Database.php';*/
 $router = new AltoRouter();
 
 //dump($_SERVER);
@@ -19,8 +22,6 @@ $router = new AltoRouter();
 
 
 $router->setBasePath($_SERVER['BASE_URI']);
-
-
 
 
 $router->map(
@@ -37,12 +38,12 @@ $router->map(
 
 $router->map(
     'GET', //method http autorisé pour cette route
-    '/catalogue/categorie/[i:id]', //la partie url aprés la racine
+    '/catalogue/category/[i:id]', //la partie url aprés la racine
     [
         'controller' => 'CatalogController',
         'method' => 'categoryAction',
     ],
-    'categorie', //identifiant unique pour cette route
+    'category', //identifiant unique pour cette route
 
 );
 
@@ -86,12 +87,12 @@ $router->map(
 
 $router->map(
     'GET', //method http autorisé pour cette route
-    '/catalogue/produit/[i:id]', //la partie url aprés la racine
+    '/catalogue/product/[i:id]', //la partie url aprés la racine
     [
         'controller' => 'CatalogController', // on choisi le nom du controller et de la methode , chpisi en amont
         'method' => 'productAction',
     ],
-    'produit', //identifiant unique pour cette route
+    'product', //identifiant unique pour cette route
 
 );
 
@@ -123,7 +124,7 @@ if ($match !== false) {
     //dump($routeInfos);
 
     //on récupère le nom du controller
-    $controllerToUse = $routeInfos['controller'];
+    $controllerToUse = '\\Mbook\\Controllers\\' . $routeInfos['controller'];
 
 
     //on récupère le nom de la méthod

@@ -1,6 +1,8 @@
 <?php
 
+namespace Mbook\Controllers;
 
+use Mbook\Models\Category;
 
 class MainController extends CoreController
 {
@@ -16,8 +18,22 @@ class MainController extends CoreController
     // Méthode chargée de gérer la page d'accueil
     public function homeAction()
     {
+
+        $categoryObject = new Category();
+        $homeCategories = $categoryObject->findTheFiveMainCategories();
+    
+
+
+
         // Délègue l'affichage à la méthode "show" du MainController
-        $this->show('home');
+        $this->show('home', [
+            'home_categories' => $homeCategories
+
+           
+        ]);
+
+       
+
 
 
     }

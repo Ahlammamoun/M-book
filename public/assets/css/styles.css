@@ -89,6 +89,9 @@ h2{
 p{
   color: gold;
 }
+p.product {
+  color:black;
+}
 .text-sm {
   font-size: 0.78rem
 }

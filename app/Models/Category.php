@@ -1,6 +1,10 @@
 <?php
 
-use mbook\Utils\Database;
+namespace Mbook\Models;
+
+use Mbook\Utils\Database;
+use PDO;
+
 
 class Category extends CoreModel
 {
@@ -8,7 +12,7 @@ class Category extends CoreModel
     private $subtitle;
     private $picture;
     private $home_order;
-  
+
 
     /**
      * Get the value of subtitle
@@ -96,11 +100,30 @@ class Category extends CoreModel
 
         $pdoStatement = $pdoDBConnexion->query($sql);
 
-        $category = $pdoStatement->fetchObject('Category');
+        $category = $pdoStatement->fetchObject('\\Mbook\\Models\\Category');
 
         return $category;
     }
+
+
+    public function findTheFiveMainCategories()
+    {
+
+        $pdoDBConnexion = Database::getPDO();
+
+
+        $sql = 'SELECT *
+        FROM `category`
+        WHERE `home_order` > 0
+        ORDER BY `home_order`
+        LIMIT 5';
+
+
+        $pdoStatement = $pdoDBConnexion->query($sql);
+
+        $categoriesHomeList = $pdoStatement->fetchAll(pdo::FETCH_CLASS, __CLASS__);
+
+        //dump($categoriesHomeList);
+        return $categoriesHomeList;
+    }
 }
-
-
-

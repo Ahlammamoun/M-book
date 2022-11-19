@@ -1,5 +1,8 @@
 <?php
 
+namespace Mbook\Models;
+use Mbook\Utils\Database;
+
 class CoreModel
 {
     protected $id;

@@ -1,5 +1,12 @@
 <?php
 
+
+namespace Mbook\Controllers;
+
+use Mbook\Models\Language;
+use Mbook\Models\Etat;
+
+
 class CoreController
 {
 
@@ -9,6 +16,14 @@ class CoreController
     {
         $absoluteURL = $_SERVER['BASE_URI'];
         global $router;
+
+
+
+        dump($viewData);
+        extract($viewData);
+
+
+
         $languageObject = new Language();
         $footerLanguages = $languageObject->findFooterLanguages();
         //dump($footerLanguages);
