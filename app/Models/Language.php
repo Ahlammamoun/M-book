@@ -55,9 +55,12 @@ class language extends CoreModel
         // On récupère les données
         $language = $pdoStatement->fetchObject('language');
 
+
+       
         // On retourne le résultat
         return $language;
     }
+
 
     public function findFooterLanguages()
     {

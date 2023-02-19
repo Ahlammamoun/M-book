@@ -51,7 +51,7 @@
               <a href="<?= $router->generate('main-home') ?>" class="nav-link active">Acceuil</a>
             </li>
             <li class="nav-item">
-              <a href="cat" class="nav-link">Catégories</a>
+              <a href="<?= $router->generate('category') ?>" class="nav-link">Catégories</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Langues</a>

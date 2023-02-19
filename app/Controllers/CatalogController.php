@@ -30,6 +30,18 @@ class CatalogController extends CoreController
 
         ]); 
     }
+    public function languageAction($urlParams)
+    {
+
+        $languageId = $urlParams['id'];
+       
+        $this->show('language', [
+
+            'language_id' => $languageId,
+        ]);
+           
+    }
+
     //$productObject = new Product();
     //$product4 = $productObject->find(4);
 
@@ -39,21 +51,8 @@ class CatalogController extends CoreController
         $etatId = $urlParams['id'];
         $this->show('etat', ['etat_id' => $etatId]);
     }
-    public function languageAction($urlParams)
-    {
-
-        $languageId = $urlParams['id'];
-
-
-
-        $this->show('language', [
-
-            'language_id' => $languageId,
-
-
-        ]);
-    }
-
+    
+    
     public function productAction($urlParams)
     {
 

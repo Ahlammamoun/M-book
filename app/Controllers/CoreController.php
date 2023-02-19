@@ -17,8 +17,7 @@ class CoreController
         $absoluteURL = $_SERVER['BASE_URI'];
         global $router;
 
-
-
+    
         //dump($viewData);
         extract($viewData);
 
@@ -26,7 +25,9 @@ class CoreController
 
         $languageObject = new Language();
         $footerLanguages = $languageObject->findFooterLanguages();
+       
         //dump($footerLanguages);
+
 
 
         $etatObject = new Etat();
