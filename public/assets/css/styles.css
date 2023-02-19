@@ -26,7 +26,7 @@ a:hover {
    * Nav bar
    */
 .navbar-cart-product {
-  border-bottom: 1px solid #495057;
+  border-bottom: 1px solid black;
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -64,7 +64,7 @@ a:hover {
   
 }
 .navbar {
-  background-color: grey;
+  background-color: black;
   color: black;
 }
 
@@ -87,7 +87,7 @@ h2{
   color: whitesmoke;
 }
 p{
-  color: gold;
+  color: white;
 }
 p.product {
   color:black;
@@ -99,7 +99,7 @@ p.product {
   min-width: 40px;
 }
 .row.mx-0 {
-  background-color: gray;
+  background-color: black;
 }
 /* produits */
 .products-grid {
@@ -171,14 +171,14 @@ img {
 /* Footer */
 #footer-services {
   background-color: black;
-  color: gold;
+  color: white;
 }
 #footer-menu {
   background-color: whitesmoke;
 }
 #footer-copyright {
   background-color:black;
-  color: #dee2e6;
+  color: white;
 }
 .payment-icon {
   width: 2rem;
