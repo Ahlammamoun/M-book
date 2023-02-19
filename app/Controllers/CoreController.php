@@ -19,7 +19,7 @@ class CoreController
 
 
 
-        dump($viewData);
+        //dump($viewData);
         extract($viewData);
 
 

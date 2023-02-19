@@ -22,7 +22,7 @@ class CatalogController extends CoreController
         $productsListWithNameAndEtatByCategory = $productObject->findProductsWithNameAndEtatByCategoryID($categoryId);
 
 
-        dump($productsListWithNameAndEtatByCategory);
+       // dump($productsListWithNameAndEtatByCategory);
         $this->show('category', [
             'current_category_object' => $currentCategoryObject,
             'products_list_with_name_and_etat_by_category' => $productsListWithNameAndEtatByCategory

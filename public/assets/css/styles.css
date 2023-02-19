@@ -10,8 +10,8 @@ a:hover {
    */
   
 .top-bar {
-  color: #495057;
-  background:#FFD700;
+  color:black;
+  background-color:black;
   padding: 1rem;
   font-weight: 300;
 }
@@ -51,7 +51,7 @@ a:hover {
 }
   
 .navbar-icon-link {
-  color: #343a40;
+  color: black;
   margin: 0 .5em;
 }
 .navbar-icon-link:hover {
@@ -59,17 +59,17 @@ a:hover {
 }
   
 .navbar-cart-product-link {
-  color: #343a40;
+  color: black;
   font-weight: bold;
   
 }
 .navbar {
-  background-color: black;
-  color: #dee2e6;
+  background-color: grey;
+  color: black;
 }
 
 .container-fluid {
-  background-color: gold;
+  background-color: whitesmoke;
 }
 /* misc */
 .dropdown-menu {
@@ -99,7 +99,7 @@ p.product {
   min-width: 40px;
 }
 .row.mx-0 {
-  background-color: black;
+  background-color: gray;
 }
 /* produits */
 .products-grid {
@@ -174,7 +174,7 @@ img {
   color: gold;
 }
 #footer-menu {
-  background-color: 	#FFD700;
+  background-color: whitesmoke;
 }
 #footer-copyright {
   background-color:black;

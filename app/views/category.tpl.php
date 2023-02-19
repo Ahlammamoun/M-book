@@ -1,5 +1,5 @@
 
-<?php dump($products_list_with_name_and_etat_by_category) ?>
+ <!--<?php dump($products_list_with_name_and_etat_by_category) ?>-->
 
 <section class="hero">
     <div class="container">
