@@ -21,7 +21,7 @@ class MainController extends CoreController
 
         $categoryObject = new Category();
         $homeCategories = $categoryObject->findTheFiveMainCategories();
-    
+        
 
 
 
@@ -31,8 +31,7 @@ class MainController extends CoreController
 
            
         ]);
-
-       
+      
 
 
 

@@ -72,6 +72,7 @@ $router->map(
 );
 
 
+
 $router->map(
     'GET', //method http autorisé pour cette route
     '/catalogue/language/[i:id]', //la partie url aprés la racine

@@ -66,6 +66,8 @@ class Etat extends CoreModel
         return $etat;
     }
 
+
+
     public function findFooterEtats()
     {
         //connexion a la bdd 
@@ -90,8 +92,7 @@ class Etat extends CoreModel
         return $etatsList;
     }
 
-    
-
+ 
 
 
 

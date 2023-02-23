@@ -1,28 +1,31 @@
-
 a {
   color: white;
 }
+
 a:hover {
   color: white;
 }
+
 /**
    * Top bar
    */
-  
+
 .top-bar {
-  color:white;
-  background-color:black;
+  color: white;
+  background-color: black;
   padding: 1rem;
   font-weight: 300;
 }
+
 .topbar-link {
   text-decoration: none;
   color: white;
 }
+
 .topbar-link:hover {
   text-decoration: none;
 }
-  
+
 /**
    * Nav bar
    */
@@ -31,25 +34,28 @@ a:hover {
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
 }
-  
+
 .navbar-cart-total {
   text-align: right;
   font-size: 1.3em;
   padding: .5em 0;
 }
+
 .navbar-cart-product-link:hover {
   text-decoration: none;
 }
+
 .navbar-light .navbar-nav .nav-link {
   color: white;
-} 
-  
+}
+
 .nav-item {
   text-transform: uppercase;
   font-size: .9em;
   font-weight: 300;
   color: white;
 }
+
 .navbar-brand {
   font-weight: 700;
   color: white;
@@ -60,17 +66,21 @@ a:hover {
   color: white;
   margin: 0 .5em;
 }
+
 .navbar-icon-link:hover {
   text-decoration: none;
 }
+
 .navbar-light .navbar-brand {
   color: white;
 }
+
 .navbar-cart-product-link {
   color: white;
   font-weight: bold;
-  
+
 }
+
 .navbar {
   background-color: black;
   color: white;
@@ -79,36 +89,44 @@ a:hover {
 .container-fluid {
   background-color: black;
 }
+
 /* misc */
 .dropdown-menu {
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.1),-1px -1px 2px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0;
   border: none;
 }
-  
+
 .breadcrumb {
   background: transparent;
   text-transform: uppercase;
   font-size: .7em;
 }
-h2{
+
+h2 {
   color: whitesmoke;
 }
-p{
+
+p {
   color: white;
 }
+
 p.product {
-  color:white;
+  color: white;
 }
+
 .text-sm {
   font-size: 0.78rem
 }
+
 .input-items {
   min-width: 40px;
 }
+
 .row.mx-0 {
   background-color: black;
 }
+
 /* produits */
 .products-grid {
   border-top: 1px solid #dee2e6;
@@ -117,39 +135,48 @@ p.product {
   overflow: hidden;
   padding: 2em;
 }
+
 .product {
   text-align: center;
 }
+
 .product-image {
   overflow: hidden;
   height: 300px;
 }
+
 .product {
   transition: all .6s
 }
+
 .product:hover {
   z-index: 1;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.1),-1px -1px 2px rgba(0,0,0,0.1);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1), -1px -1px 2px rgba(0, 0, 0, 0.1);
   transform: scale(1.1);
 }
-  
+
 
 /* Cart */
 .block-body {
-  padding: 1.2rem 1.5rem;}
+  padding: 1.2rem 1.5rem;
+}
+
 .block-header {
   padding: 1.2rem 1.5rem;
   background: #f8f9fa;
 }
+
 img {
   vertical-align: middle;
   border-style: none;
   height: 350px;
 }
+
 .cart-item-img {
   max-width: 100px;
   margin-right: 1em;
 }
+
 .cart-header {
   text-transform: uppercase;
   letter-spacing: 0.2em;
@@ -157,6 +184,7 @@ img {
   padding: 1.2rem 2rem;
   background: #f8f9fa;
 }
+
 .order-summary-item {
   display: -ms-flexbox;
   display: flex;
@@ -166,42 +194,123 @@ img {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #eee;
 }
+
 /* Grille */
-  
+
 .item img {
   object-fit: cover;
   position: absolute;
   height: 100%;
 }
+
 .card {
   margin-bottom: 2rem;
 }
+
 /* Footer */
 #footer-services {
   background-color: black;
   color: white;
 }
+
 #footer-menu {
   background-color: whitesmoke;
 }
+
 #footer-copyright {
-  background-color:black;
+  background-color: black;
   color: white;
 }
+
 .payment-icon {
   width: 2rem;
 }
-  
-  
+
+
 .service-column {
   display: flex;
   margin-bottom: .2rem;
 }
-  
+
 .service-column i {
   font-size: 3em;
   width: 4rem;
   border-right: 1px solid #ccc;
   padding-right: 1rem;
   margin-right: 1rem;
+}
+
+nav2 {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+}
+
+nav2 ul {
+  list-style-type: none;
+  background-color: black
+}
+
+nav2 ul li {
+  text-align: center;
+  float: left;
+  position: relative;
+  width: 98%;
+
+}
+
+nav2 ul::after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+nav2 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+
+  padding: 10px 0px;
+}
+
+nav2 a:hover {
+  color: orange;
+  
+}
+
+.sous {
+  display: none;
+ /* box-shadow: 0px 1px 2px rgb(122, 121, 121);*/
+ text-align: center;
+  background-color: black;
+}
+
+nav2>ul li:hover .sous {
+  display: block;
+}
+
+.sous li {
+  float: none;
+  width: 100%;
+  text-align: center;
+}
+
+.sous a {
+  padding: 10px;
+  border-bottom: none;
+  margin-right: 55px;
+}
+
+.sous a:hover {
+  border-bottom: none;
+  background-color: black;
+}
+
+.deroulant>a::after {
+
+  content: " v";
+  font-size: 30px;
 }

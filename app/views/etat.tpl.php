@@ -3,11 +3,15 @@
       <!-- Breadcrumbs -->
       <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-        <li class="breadcrumb-item active">Nom de l'etat</li>
+
+       
+   
+        <h1 class="hero-heading">Type n°<?= $viewData['etat_id'] ?></h1>
       </ol>
       <!-- Hero Content-->
       <div class="hero-content pb-5 text-center">
-        <h1 class="hero-heading">Etat n°<?= $viewData['etat_id'] ?></h1>
+  
+  
         <div class="row">
           <div class="col-xl-8 offset-xl-2">
             <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -17,7 +21,7 @@
       </div>
     </div>
   </section>
-
+                  
   <section class="products-grid">
     <div class="container-fluid">
 

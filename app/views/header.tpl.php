@@ -46,7 +46,7 @@
         <button type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
         <!-- Navbar Collapse -->
         <div id="navbarCollapse" class="collapse navbar-collapse">
-          <ul class="navbar-nav mx-auto">
+         <!-- <ul class="navbar-nav mx-auto">
             <li class="nav-item">
               <a href="<?= $router->generate('main-home') ?>" class="nav-link active">Acceuil</a>
             </li>
@@ -54,10 +54,10 @@
               <a href="<?= $router->generate('category') ?>" class="nav-link">Catégories</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Langues</a>
+              <a href="<?= $router->generate('language') ?>" class="nav-link">Langues</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Etats</a>
+              <a href="<?= $router->generate('etat') ?>" class="nav-link">Etats</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Blog</a>
@@ -65,7 +65,10 @@
             <li class="nav-item">
               <a href="#" class="nav-link">Contact</a>
             </li>
-          </ul>
+          </ul>-->
+
+   
+
           <div class="d-flex align-items-center justify-content-between justify-content-lg-end mt-1 mb-2 my-lg-0">
             <!-- Search Button-->
             <div class="nav-item navbar-icon-link">
@@ -120,4 +123,49 @@
         </div>
       </div>
     </nav>
+
+    <nav2>
+     
+
+    <ul>
+          <li class="deroulant"><a href="#">Categories</a>
+        <ul class="sous">
+         
+      <?php foreach ($footerEtats as $singleEtat): ?>
+                <li>
+                  <a href="<?= $router->generate('etat', ['id' => $singleEtat->getId()]) ?>" class="text-muted"><?= $singleEtat->getName() ?></a>
+                </li>
+              <?php endforeach; ?>
+      </li>
+      </ul>
+
+      <ul>
+          <li class="deroulant"><a href="#">Etats</a>
+        <ul class="sous">
+         
+      <?php foreach ($footerEtats as $singleEtat): ?>
+                <li>
+                  <a href="<?= $router->generate('etat', ['id' => $singleEtat->getId()]) ?>" class="text-muted"><?= $singleEtat->getName() ?></a>
+                </li>
+              <?php endforeach; ?>
+      </li>
+      </ul>
+
+      <ul>
+          <li class="deroulant"><a href="#">Languages</a>
+        <ul class="sous">
+
+          <?php foreach ($footerLanguages as $singleLanguage): ?>
+                <li>
+                  <a href="<?= $router->generate('language', ['id' => $singleLanguage->getId()]) ?>" class="text-muted"><?= $singleLanguage->getName() ?></a>
+                </li>
+              <?php endforeach; ?>
+             </li>  
+          </ul>
+         
+      </ul>
+
+      </nav2>
+
+
   </header>

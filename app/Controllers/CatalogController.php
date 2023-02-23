@@ -2,7 +2,7 @@
 
 namespace Mbook\Controllers;
 
-use Mbook\Models\{Product, Language, Category};
+use Mbook\Models\{Product, Language, Category, Etat};
 
 
 
@@ -15,7 +15,7 @@ class CatalogController extends CoreController
         $CategoryObject = new Category();
     
         $currentCategoryObject = $CategoryObject->find($categoryId);
-
+       
         //dump($currentCategory);
 
         $productObject = new Product();
@@ -23,13 +23,19 @@ class CatalogController extends CoreController
 
 
        // dump($productsListWithNameAndEtatByCategory);
+      // dump($currentCategoryObject);
         $this->show('category', [
             'current_category_object' => $currentCategoryObject,
             'products_list_with_name_and_etat_by_category' => $productsListWithNameAndEtatByCategory
-           
-
+        
         ]); 
+      
+
+
+
     }
+
+
     public function languageAction($urlParams)
     {
 
@@ -48,10 +54,21 @@ class CatalogController extends CoreController
 
     public function etatAction($urlParams)
     {
+
+
         $etatId = $urlParams['id'];
-        $this->show('etat', ['etat_id' => $etatId]);
-    }
+     
+        $etatObject = new Etat();
+        $footerEtats = $etatObject->findFooterEtats();
+
     
+        $this->show('etat', [
+            
+            'etat_id' => $etatId,
+           'footer_etats' => $footerEtats,
+        ]);
+    }
+ 
     
     public function productAction($urlParams)
     {
@@ -62,8 +79,6 @@ class CatalogController extends CoreController
         $productData =
             $productObject->findProductWithCategoryAndLanguageNAme($productId);
 
-
-
         // var_dump($productData);
 
         $this->show('product', [
@@ -72,4 +87,9 @@ class CatalogController extends CoreController
 
         ]);
     }
+
+
+
+
+
 }
