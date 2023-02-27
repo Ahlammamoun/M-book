@@ -126,18 +126,17 @@
 
     <nav2>
      
-
     <ul>
-          <li class="deroulant"><a href="#">Categories</a>
+        <li class="deroulant"><a href="#">Categories</a>
         <ul class="sous">
-        <?php foreach ($footerEtats as $singleEtat): ?>
-                <li>
-                  <a href="<?= $router->generate('etat', ['id' => $singleEtat->getId()]) ?>" class="text-muted"><?= $singleEtat->getName() ?></a>
-                </li>
-              <?php endforeach; ?>
-      </li>
-      </ul>
-</ul>
+        <?php foreach ($categories as $category): ?>
+                     <li>
+                           <a href="<?= $router->generate('category', ['id' => $category->getId()]) ?>" class="text-muted"><?= $category->getName() ?></a>
+                    </li>
+        <?php endforeach; ?>
+        </ul>
+        </li>
+    </ul>
       <ul>
           <li class="deroulant"><a href="#">Etats</a>
         <ul class="sous">
@@ -147,8 +146,8 @@
                   <a href="<?= $router->generate('etat', ['id' => $singleEtat->getId()]) ?>" class="text-muted"><?= $singleEtat->getName() ?></a>
                 </li>
               <?php endforeach; ?>
-      </li>
       </ul>
+      </li>
 </ul>
       <ul>
           <li class="deroulant"><a href="#">Languages</a>
@@ -159,9 +158,10 @@
                   <a href="<?= $router->generate('language', ['id' => $singleLanguage->getId()]) ?>" class="text-muted"><?= $singleLanguage->getName() ?></a>
                 </li>
               <?php endforeach; ?>
+             
+              </ul>
              </li>  
-          </ul>
-         
+        
       </ul>
 
       </nav2>

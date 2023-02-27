@@ -9,7 +9,7 @@
     
       <div class="hero-content pb-5 text-center">
 
-          <h1 class="hero-heading">Langue n°<?= $viewData['language_id'] ?>
+          <h1 class="hero-heading"><?= $language->getName() ?></h1>
           
           <div class="col-xl-8 offset-xl-2">
             <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

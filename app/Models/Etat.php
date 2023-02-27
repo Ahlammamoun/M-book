@@ -48,7 +48,7 @@ class Etat extends CoreModel
 
 
         //on récupère les datas
-        $etatList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Etat');
+        $etatList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, __CLASS__);
 
         return $etatList;
     }
@@ -61,7 +61,7 @@ class Etat extends CoreModel
 
         $pdoStatement = $pdoDBConnexion->query($sql);
 
-        $etat  = $pdoStatement->fetchObject('Etat');
+        $etat  = $pdoStatement->fetchObject(__CLASS__);
 
         return $etat;
     }

@@ -1,17 +1,18 @@
 
- <?php dump($products_list_with_name_and_etat_by_category) ?>
 
 <section class="hero">
     <div class="container">
       <!-- Breadcrumbs -->
       <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
-        <li class="breadcrumb-item active"><?= $current_category_object->getName() ?></li>
+      
+       
       </ol>
       <!-- Hero Content-->
     
       <div class="hero-content pb-5 text-center">
         <h1 class="hero-heading"><?= $current_category_object->getName() ?></h1>
+         <h2 class="breadcrumb-item active"><?= $current_category_object->getSubtitle() ?></h2>
         <div class="row">
           <div class="col-xl-8 offset-xl-2">
             <p class="lead text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor

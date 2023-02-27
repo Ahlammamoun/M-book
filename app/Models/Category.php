@@ -87,7 +87,7 @@ class Category extends CoreModel
         $pdoStatement = $pdoDBConnexion->query($sql);
 
         //on récupère les datas
-        $categoriesList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'Category');
+        $categoriesList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, __CLASS__);
 
         return $categoriesList;
     }

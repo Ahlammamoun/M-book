@@ -2,9 +2,7 @@
 
 namespace Mbook\Controllers;
 
-use Mbook\Models\Category;
-use Mbook\Models\Etat;
-
+use Mbook\Models\{Product, Language, Category, Etat};
 
 
 class MainController extends CoreController
@@ -40,7 +38,7 @@ class MainController extends CoreController
     public function testAction()
     {
        //$etatObject = new Etat();
-        //$etat2 =  $etatObject->find(4);
+       //dump($etatObject->find(5));
         //dump($etat2);
         //$category2->setUpdated_at('06.03.1982');
         //dump($category2);
@@ -49,8 +47,12 @@ class MainController extends CoreController
         //dump($product4);
         //$product4->setName('du ahlam');
         //dump($product4);
-        //$categoryObject = new Category();
+        $categoryObject = new Category();
         //dump($categoryObject->findAll());
+
+
+
+
        
     }
 

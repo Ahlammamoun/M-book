@@ -22,12 +22,16 @@ class CatalogController extends CoreController
         $productsListWithNameAndEtatByCategory = $productObject->findProductsWithNameAndEtatByCategoryID($categoryId);
 
 
+        $categoryObject2 = new Category();
+        $category = $categoryObject2->find($categoryId);
+   
+
        // dump($productsListWithNameAndEtatByCategory);
       // dump($currentCategoryObject);
         $this->show('category', [
             'current_category_object' => $currentCategoryObject,
-            'products_list_with_name_and_etat_by_category' => $productsListWithNameAndEtatByCategory
-        
+            'products_list_with_name_and_etat_by_category' => $productsListWithNameAndEtatByCategory,
+            'category' => $category,
         ]); 
       
     }
@@ -38,16 +42,18 @@ class CatalogController extends CoreController
 
         $languageId = $urlParams['id'];
        
+
+        $languageObject2 = new Language();
+        $language = $languageObject2->find($languageId);
+
+
         $this->show('language', [
 
             'language_id' => $languageId,
+            'language' => $language,
         ]);
            
     }
-
-    //$productObject = new Product();
-    //$product4 = $productObject->find(4);
-
 
     public function etatAction($urlParams)
     {
@@ -58,11 +64,16 @@ class CatalogController extends CoreController
         $etatObject = new Etat();
         $footerEtats = $etatObject->findFooterEtats();
 
-  
+        $etatObject2 = new Etat();
+        $etat = $etatObject2->find($etatId);
+
+
+
         $this->show('etat', [
            
             'etat_id' => $etatId,
            'footer_etats' => $footerEtats,
+           'etat' => $etat
         
         ]);
     }

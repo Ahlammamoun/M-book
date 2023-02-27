@@ -35,6 +35,11 @@ class CoreController
         $footerEtats = $etatObject->findFooterEtats();
 
 
+        $categoryObject = new Category();
+        $categories = $categoryObject->findAll();
+        //dump($categoryObject);//
+
+
         require_once __DIR__ . '/../views/header.tpl.php';
         require_once __DIR__ . '/../views/' . $viewName . '.tpl.php';
         require_once __DIR__ . '/../views/footer.tpl.php';

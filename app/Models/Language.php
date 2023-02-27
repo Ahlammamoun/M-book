@@ -37,7 +37,7 @@ class language extends CoreModel
 
 
         //on récupère les datas
-        $languageList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'language');
+        $languageList = $pdoStatement->fetchAll(PDO::FETCH_CLASS, __CLASS__);
         //dump($languageList);
         return $languageList;
     }
@@ -53,7 +53,7 @@ class language extends CoreModel
         $pdoStatement = $pdoDBConnexion->query($sql);
 
         // On récupère les données
-        $language = $pdoStatement->fetchObject('language');
+        $language = $pdoStatement->fetchObject(__CLASS__);
 
 
        
