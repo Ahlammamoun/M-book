@@ -18,7 +18,7 @@ class CoreController
         global $router;
 
     
-        //dump($viewData);
+        //dump($viewName);
         extract($viewData);
           
         //$categoryObject = new Category();

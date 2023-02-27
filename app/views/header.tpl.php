@@ -130,15 +130,14 @@
     <ul>
           <li class="deroulant"><a href="#">Categories</a>
         <ul class="sous">
-         
-      <?php foreach ($footerEtats as $singleEtat): ?>
+        <?php foreach ($footerEtats as $singleEtat): ?>
                 <li>
                   <a href="<?= $router->generate('etat', ['id' => $singleEtat->getId()]) ?>" class="text-muted"><?= $singleEtat->getName() ?></a>
                 </li>
               <?php endforeach; ?>
       </li>
       </ul>
-
+</ul>
       <ul>
           <li class="deroulant"><a href="#">Etats</a>
         <ul class="sous">
@@ -150,7 +149,7 @@
               <?php endforeach; ?>
       </li>
       </ul>
-
+</ul>
       <ul>
           <li class="deroulant"><a href="#">Languages</a>
         <ul class="sous">

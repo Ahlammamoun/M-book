@@ -3,6 +3,9 @@
 namespace Mbook\Controllers;
 
 use Mbook\Models\Category;
+use Mbook\Models\Etat;
+
+
 
 class MainController extends CoreController
 {
@@ -29,19 +32,16 @@ class MainController extends CoreController
         $this->show('home', [
             'home_categories' => $homeCategories
 
-           
+    
         ]);
       
-
-
-
     }
 
     public function testAction()
     {
-        //$categoryObject = new Category();
-        //$category2 =  $categoryObject->find(2);
-        //dump($category2);
+       //$etatObject = new Etat();
+        //$etat2 =  $etatObject->find(4);
+        //dump($etat2);
         //$category2->setUpdated_at('06.03.1982');
         //dump($category2);
         //$productObject = new Product();

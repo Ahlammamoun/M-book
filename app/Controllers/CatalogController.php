@@ -30,9 +30,6 @@ class CatalogController extends CoreController
         
         ]); 
       
-
-
-
     }
 
 
@@ -61,15 +58,16 @@ class CatalogController extends CoreController
         $etatObject = new Etat();
         $footerEtats = $etatObject->findFooterEtats();
 
-    
+  
         $this->show('etat', [
-            
+           
             'etat_id' => $etatId,
            'footer_etats' => $footerEtats,
+        
         ]);
     }
  
-    
+
     public function productAction($urlParams)
     {
 

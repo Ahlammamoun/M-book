@@ -4,8 +4,6 @@
       <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
 
-       
-   
         <h1 class="hero-heading">Type n°<?= $viewData['etat_id'] ?></h1>
       </ol>
       <!-- Hero Content-->

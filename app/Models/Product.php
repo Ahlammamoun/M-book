@@ -234,11 +234,11 @@ class Product extends CoreModel
     {
         $pdoDBConnexion = Database::getPDO();
 
-        $sql            = 'SELECT * FROM `product` WHERE `id` = ' . $id;
+        $sql = 'SELECT * FROM `product` WHERE `id` = ' . $id;
 
-        $pdoStatement   = $pdoDBConnexion->query($sql);
+        $pdoStatement = $pdoDBConnexion->query($sql);
 
-        $product     = $pdoStatement->fetchObject('Product');
+        $product = $pdoStatement->fetchObject('Product');
 
         return $product;
     }
