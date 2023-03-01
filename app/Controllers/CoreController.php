@@ -29,7 +29,7 @@ class CoreController
         $footerLanguages = $languageObject->findFooterLanguages();
        
         //dump($footerLanguages);
-
+        
 
         $etatObject = new Etat();
         $footerEtats = $etatObject->findFooterEtats();
