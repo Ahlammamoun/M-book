@@ -2,7 +2,7 @@
     <div class="container">
       <!-- Breadcrumbs -->
       <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item"><a href="index.html"></a></li>
       
       </ol>
       <!-- Hero Content-->
@@ -51,8 +51,8 @@
             <a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
           </div>
           <div class="py-2">
-            <p class="text-muted text-sm mb-1">Chausson</p>
-            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Kissing</a></h3><span class="text-muted">40€</span>
+            <p class="text-muted text-sm mb-1">ouverture</p>
+            <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">infini</a></h3><span class="text-muted">40€</span>
           </div>
         </div>
         <!-- /product-->
@@ -60,7 +60,7 @@
         <div class="product col-xl-3 col-lg-4 col-sm-6">
             <div class="product-image">
               <a href="detail.html" class="product-hover-overlay-link">
-                <img src="assets/images/produits/2-rose_tn.jpg" alt="product" class="img-fluid">
+                <img src="assets/images/produits/9-pantufa_tn.jpg" alt="product" class="img-fluid">
               </a>
             </div>
             <div class="product-action-buttons">
@@ -68,8 +68,8 @@
               <a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
             </div>
             <div class="py-2">
-              <p class="text-muted text-sm mb-1">Tong</p>
-              <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Pink lady</a></h3><span class="text-muted">20€</span>
+              <p class="text-muted text-sm mb-1">Fiduciaire</p>
+              <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">troisième oeil</a></h3><span class="text-muted">20€</span>
             </div>
           </div>
           <!-- /product-->
@@ -77,7 +77,7 @@
         <div class="product col-xl-3 col-lg-4 col-sm-6">
             <div class="product-image">
               <a href="detail.html" class="product-hover-overlay-link">
-                <img src="assets/images/produits/3-panda_tn.jpg" alt="product" class="img-fluid">
+                <img src="assets/images/produits/7-sleepy_tn.jpg" alt="product" class="img-fluid">
               </a>
             </div>
             <div class="product-action-buttons">
@@ -85,8 +85,8 @@
               <a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
             </div>
             <div class="py-2">
-              <p class="text-muted text-sm mb-1">Chausson</p>
-              <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Panda</a></h3><span class="text-muted">50€</span>
+              <p class="text-muted text-sm mb-1">foreign</p>
+              <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Apprentissage</a></h3><span class="text-muted">50€</span>
             </div>
           </div>
           <!-- /product-->
@@ -94,7 +94,7 @@
         <div class="product col-xl-3 col-lg-4 col-sm-6">
             <div class="product-image">
               <a href="detail.html" class="product-hover-overlay-link">
-                <img src="assets/images/produits/20-deadpool_tn.jpg" alt="product" class="img-fluid">
+                <img src="assets/images/produits/10-jack_tn.jpg" alt="product" class="img-fluid">
               </a>
             </div>
             <div class="product-action-buttons">
@@ -102,8 +102,8 @@
               <a href="detail.html" class="btn btn-dark btn-buy"><i class="fa-search fa"></i><span class="btn-buy-label ml-2">Voir</span></a>
             </div>
             <div class="py-2">
-              <p class="text-muted text-sm mb-1">Pantoufle</p>
-              <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">Deadpool</a></h3><span class="text-muted">15€</span>
+              <p class="text-muted text-sm mb-1">Ici bàs</p>
+              <h3 class="h6 text-uppercase mb-1"><a href="detail.html" class="text-dark">100 pages</a></h3><span class="text-muted">15€</span>
             </div>
           </div>
           <!-- /product-->

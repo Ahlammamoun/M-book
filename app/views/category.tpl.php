@@ -4,14 +4,12 @@
     <div class="container">
       <!-- Breadcrumbs -->
       <ol class="breadcrumb justify-content-center">
-        <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
-      
-       
+        
       </ol>
       <!-- Hero Content-->
     
       <div class="hero-content pb-5 text-center">
-        <h1 class="hero-heading"><?= $current_category_object->getName() ?></h1>
+        <h1 class="hero-heading"><?= $current_category_object->getName() ?></h1><br>
          <h2 class="breadcrumb-item active"><?= $current_category_object->getSubtitle() ?></h2>
         <div class="row">
           <div class="col-xl-8 offset-xl-2">

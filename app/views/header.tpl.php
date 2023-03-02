@@ -23,6 +23,7 @@
                 <i class="fa fa-phone"></i> 06 13 46 93 40
               </li>
               <li class="list-inline-item px-3 border-left d-none d-lg-inline-block">Livraison offerte à partir de 50€</li>
+              &#128213;
             </ul>
           </div>
           <div class="col-sm-5 d-flex justify-content-end">
