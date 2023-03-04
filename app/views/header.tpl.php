@@ -95,7 +95,9 @@
                     <div class="d-flex justify-content-between">
                       <a href="cart.html" class="btn btn-link text-dark mr-3">Voir le panier <i class="fa-arrow-right fa"></i></a>
                       <a href="#" class="btn btn-outline-dark">Commander</a>
+                      
                     </div>
+                  
                   </div>
                 </div>
               </div>
@@ -103,10 +105,9 @@
           </div>
         </div>
       </div>
-    </nav>
-
+    </nav>  
     <nav2>
-     
+    
     <ul>
         <li class="deroulant"><a href="#">Categories</a>
         <ul class="sous">

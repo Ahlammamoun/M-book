@@ -4,7 +4,7 @@
       <ol class="breadcrumb justify-content-center">
         <li class="breadcrumb-item"><a href="index.html"></a></li>
        
-        <h1 class="hero-heading"><?= $etat->getName() ?></h1>
+        <h1 class="hero-heading text-dark"><?= $etat->getName() ?></h1>
       </ol>
       <!-- Hero Content-->
       <div class="hero-content pb-5 text-center">

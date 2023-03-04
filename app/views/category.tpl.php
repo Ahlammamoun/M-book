@@ -8,8 +8,8 @@
       </ol>
       <!-- Hero Content-->
     
-      <div class="hero-content pb-5 text-center">
-        <h1 class="hero-heading"><?= $current_category_object->getName() ?></h1><br>
+      <div class="hero-content pb-5 text-center ">
+        <h1 class="hero-heading text-dark"><?= $current_category_object->getName() ?></h1><br>
          <h2 class="breadcrumb-item active"><?= $current_category_object->getSubtitle() ?></h2>
         <div class="row">
           <div class="col-xl-8 offset-xl-2">
@@ -20,11 +20,11 @@
     </div>
   </section>
 
-  <section class="products-grid">
-    <div class="container-fluid">
+  <section class="products-grid ">
+    <div class="container-fluid ">
 
-      <header class="product-grid-header d-flex align-items-center justify-content-between">
-        <div class="mr-3 mb-3">
+      <div class="product-grid-header d-flex align-items-center justify-content-between text-light">
+       <div class="mr-3 mb-3">
           Affichage <strong>1-12 </strong>de <strong>158 </strong>résultats
         </div>
         <div class="mr-3 mb-3"><span class="mr-2">Voir</span><a href="#" class="product-grid-header-show active">12 </a><a
@@ -38,7 +38,7 @@
             <option value="orderby_3">Prix</option>
           </select>
         </div>
-      </header>
+</div>
       <div class="row">
         <?php foreach ($products_list_with_name_and_etat_by_category as $productArray): ?>
           <?php $productUrl = $router->generate('product', ['id' => $productArray['id']]); ?>

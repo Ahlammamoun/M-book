@@ -9,7 +9,7 @@
     
       <div class="hero-content pb-5 text-center">
 
-          <h1 class="hero-heading"><?= $language->getName() ?></h1>
+          <h1 class="hero-heading text-dark"><?= $language->getName() ?></h1>
           
           <div class="col-xl-8 offset-xl-2">
          
