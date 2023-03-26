@@ -58,7 +58,7 @@ Zone réservée aux administrateurs _business_ et techniques du site.
 
 L'organisation pour le développement du site est horizontale, et suit la méthode agile _Scrum_ (développement itératif par _Sprints_).
 
-Il y a des rôles prédéfinis. Quel que soit son rôle, on ne donne d'ordre à personne : chaque personne qui assume un rôle s'occupe de sa partie, de ses responsabilités, en locurrence pour se projet j'ai endossé les rôles .
+Il y a des rôles prédéfinis. Quel que soit son rôle, on ne donne d'ordre à personne : chaque personne qui assume un rôle s'occupe de sa partie, de ses responsabilités, en locurrence pour ce projet qui est une présentation j'ai endossé les rôles .
 
 ### Product Owner
 
